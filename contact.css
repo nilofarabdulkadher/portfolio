@@ -1,0 +1,79 @@
+*{/* Reset some default styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Body Styling */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    /* Navigation Bar */
+    nav {
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    nav ul li a:hover {
+        color: #ff6347; /* Change to any color you like */
+    }
+    
+    /* Contact Section */
+    .container {
+        width: 80%;
+        margin: 180px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    
+    p:first-child {
+        font-weight: bold;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+    
+        .container {
+            width: 90%;
+        }
+    }
+    }

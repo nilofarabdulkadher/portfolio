@@ -1,0 +1,139 @@
+*{ /* Basic Reset */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0; /* Light gray background for the body */
+      color: #333;
+  }
+  
+  /* Fixed Navigation Bar */
+  nav {
+      background: linear-gradient(45deg, #1abc9c, #16a085); /* Gradient from teal to dark teal */
+      padding: 20px 0;
+      position: fixed; /* Fixed navigation */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure nav stays on top */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow under the nav bar */
+  }
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  nav ul li {
+      margin-right: 30px;
+  }
+  
+  nav ul li:last-child {
+      margin-right: 0; /* Remove right margin on the last item */
+  }
+  
+  nav ul li a {
+      color: #fff; /* White text for links */
+      text-decoration: none;
+      font-size: 18px;
+      padding: 12px 20px;
+      display: inline-block;
+      border-radius: 25px;
+      transition: background-color 0.3s, transform 0.3s ease-in-out;
+      text-transform: uppercase; /* Uppercase text for a bold look */
+  }
+  
+  nav ul li a:hover {
+      background-color: #34495e; /* Darker blue on hover */
+      transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  nav ul li a.active {
+      background-color: #f39c12; /* Orange for active links */
+      color: #fff;
+      font-weight: bold; /* Bold text for active link */
+  }
+  
+  /* Skills Section with Grey Background */
+  #skills {
+      margin-top: 180px; /* Space below fixed nav bar */
+      padding: 50px;
+      background: #fafafa; /* Light grey background for skills section */
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around the skills section */
+      text-align: center;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  h2 {
+      font-size: 3rem;
+      color: #8f9194; /* Dark text for the section heading */
+      margin-bottom: 40px;
+      font-weight: 600; /* Bold and thicker font for the heading */
+      text-transform: uppercase; /* Uppercase heading for emphasis */
+      letter-spacing: 2px;
+  }
+  
+  ul {
+      list-style-type: none;
+      padding-left: 0;
+  }
+  
+  ul li {
+      font-size: 1.4rem;
+      padding: 18px;
+      background-color: #cec7c7; /* White background for skills items */
+      margin: 15px 0;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow on each skill item */
+  }
+  
+  ul li:hover {
+      background-color: #f39c12; /* Orange background on hover */
+      color: #a39d9d;
+      transform: translateY(-5px); /* Slightly lift the item on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      nav ul {
+          flex-direction: column; /* Stack nav items vertically on small screens */
+          align-items: center;
+      }
+  
+      nav ul li {
+          margin-bottom: 20px; /* Spacing between stacked items */
+      }
+  
+      nav ul li a {
+          font-size: 16px; /* Smaller font size for mobile */
+          padding: 10px 15px;
+      }
+  
+      #skills {
+          margin-top: 100px; /* Adjust space for smaller screens */
+          padding: 30px;
+      }
+  
+      h2 {
+          font-size: 2.5rem; /* Smaller heading on mobile */
+      }
+  
+      ul li {
+          font-size: 1.2rem; /* Adjust text size on mobile */
+      }
+  }
+  
+}
+
+
+  
